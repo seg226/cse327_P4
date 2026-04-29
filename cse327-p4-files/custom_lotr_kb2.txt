@@ -1,65 +1,300 @@
-% --- CHARACTERS (60 Facts) ---
-character(frodo). character(sam). character(merry). character(pippin).
-character(gandalf). character(aragorn). character(boromir). character(legolas).
-character(gimli). character(sauron). character(saruman). character(galadriel).
-character(elrond). character(arwen). character(bilbo). character(gollum).
-character(witch_king). character(lurtz). character(celeborm). character(haldir).
-% ... add 40 more minor characters (e.g., character(farmer_maggot), character(rosie)) to reach 60 ...
-
-% --- RACES & AFFILIATIONS (40 Facts) ---
-race(frodo, hobbit). race(sam, hobbit). race(merry, hobbit). race(pippin, hobbit).
-race(gandalf, maia). race(aragorn, human). race(boromir, human). race(legolas, elf).
-race(gimli, dwarf). race(sauron, maia). race(saruman, maia). race(galadriel, elf).
-alignment(frodo, good). alignment(sam, good). alignment(gandalf, good).
-alignment(sauron, evil). alignment(saruman, evil). alignment(lurtz, evil).
-home_region(frodo, shire). home_region(sam, shire). home_region(elrond, rivendell).
-home_region(legolas, mirkwood). home_region(gimli, lonely_mountain).
-
-% --- ITEMS & LOCATIONS (170 Facts) ---
-item(the_one_ring). item(sting). item(anduril). item(glamdring).
-carries(frodo, the_one_ring). carries(frodo, sting). carries(gandalf, glamdring).
-location(hobbiton). location(bree). location(rivendell). location(moria).
-location(lothlorien). location(amon_hen). location(isengard). location(mordor).
-visited(frodo, hobbiton). visited(sam, hobbiton). visited(aragorn, bree).
-visited(frodo, rivendell). visited(legolas, rivendell). visited(gimli, rivendell).
-% ... duplicate patterns of visited(X, Y) and carries(X, I) to reach 170+ total ...
-
-% --- RULES (31 Rules for Inference Depth) ---
-
-% Depth 1: Simple Relations
+character(frodo).
+character(sam).
+character(merry).
+character(pippin).
+character(gandalf).
+character(aragorn).
+character(boromir).
+character(legolas).
+character(gimli).
+character(sauron).
+character(saruman).
+character(galadriel).
+character(elrond).
+character(arwen).
+character(bilbo).
+character(gollum).
+character(witch_king).
+character(lurtz).
+character(celeborm).
+character(haldir).
+character(theoden).
+character(eowyn).
+character(eomer).
+character(grima).
+character(treebeard).
+character(denethor).
+character(faramir).
+character(gothmog).
+character(shagrat).
+character(gorbag).
+character(rosie).
+character(maggot).
+character(butterbur).
+character(glorfindel).
+character(radagast).
+character(durin).
+character(isildur).
+character(elendil).
+character(gil_galad).
+character(cirdan).
+character(gamling).
+character(hama).
+character(erkenbrand).
+character(damrod).
+character(mablung).
+character(beregond).
+character(bergil).
+character(forlong).
+character(imrahil).
+character(hirluin).
+character(duinhir).
+character(derufin).
+character(duilin).
+character(golasgil).
+character(dervorin).
+character(anborn).
+character(thorin).
+character(balin).
+character(dwalin).
+character(fili).
+character(kili).
+character(dori).
+character(nori).
+character(ori).
+character(oin).
+character(gloin).
+character(bifur).
+character(bofur).
+character(bombur).
+character(dain).
+character(thranduil).
+character(legolas_father).
+character(beorn).
+character(bard).
+character(smaug).
+character(bolg).
+character(azog).
+character(shelob).
+character(balrog).
+character(great_eagle).
+character(gwaihir).
+character(landroval).
+character(meneldor).
+character(quickbeam).
+character(finglas).
+character(fladrif).
+character(beechbone).
+character(brealight).
+character(leaflock).
+character(fimbthil).
+character(goldberry).
+character(tom_bombadil).
+character(ghân_buri_ghân).
+character(elladan).
+character(elrohir).
+character(earnur).
+character(earendil).
+character(elwing).
+character(tuor).
+character(idril).
+race(frodo, hobbit).
+race(sam, hobbit).
+race(merry, hobbit).
+race(pippin, hobbit).
+race(bilbo, hobbit).
+race(rosie, hobbit).
+race(maggot, hobbit).
+race(gandalf, maia).
+race(saruman, maia).
+race(sauron, maia).
+race(radagast, maia).
+race(aragorn, human).
+race(boromir, human).
+race(faramir, human).
+race(theoden, human).
+race(eowyn, human).
+race(eomer, human).
+race(isildur, human).
+race(elendil, human).
+race(legolas, elf).
+race(galadriel, elf).
+race(elrond, elf).
+race(arwen, elf).
+race(haldir, elf).
+race(celeborn, elf).
+race(thranduil, elf).
+race(gimli, dwarf).
+race(gloin, dwarf).
+race(thorin, dwarf).
+race(balin, dwarf).
+race(dain, dwarf).
+race(durin, dwarf).
+alignment(frodo, good).
+alignment(sam, good).
+alignment(merry, good).
+alignment(pippin, good).
+alignment(gandalf, good).
+alignment(aragorn, good).
+alignment(legolas, good).
+alignment(gimli, good).
+alignment(boromir, good).
+alignment(elrond, good).
+alignment(galadriel, good).
+alignment(bilbo, good).
+alignment(sauron, evil).
+alignment(saruman, evil).
+alignment(witch_king, evil).
+alignment(lurtz, evil).
+alignment(gollum, neutral).
+alignment(treebeard, neutral).
+alignment(denethor, neutral).
+alignment(grima, evil).
+home(frodo, shire).
+home(sam, shire).
+home(merry, shire).
+home(pippin, shire).
+home(aragorn, dunedain).
+home(boromir, gondor).
+home(faramir, gondor).
+home(legolas, mirkwood).
+home(gimli, erebor).
+home(elrond, rivendell).
+home(galadriel, lothlorien).
+home(theoden, rohan).
+home(sauron, mordor).
+home(saruman, isengard).
+home(thranduil, mirkwood).
+home(dain, iron_hills).
+home(eomer, rohan).
+home(eowyn, rohan).
+home(denethor, gondor).
+home(celeborn, lothlorien).
+visited(frodo, shire).
+visited(frodo, bree).
+visited(frodo, rivendell).
+visited(frodo, moria).
+visited(frodo, lothlorien).
+visited(frodo, amon_hen).
+visited(frodo, mordor).
+visited(sam, shire).
+visited(sam, bree).
+visited(sam, rivendell).
+visited(sam, moria).
+visited(sam, lothlorien).
+visited(sam, amon_hen).
+visited(sam, mordor).
+visited(gandalf, shire).
+visited(gandalf, rivendell).
+visited(gandalf, moria).
+visited(gandalf, isengard).
+visited(aragorn, bree).
+visited(aragorn, rivendell).
+visited(aragorn, moria).
+visited(aragorn, amon_hen).
+visited(legolas, rivendell).
+visited(legolas, moria).
+visited(legolas, lothlorien).
+visited(legolas, amon_hen).
+visited(gimli, rivendell).
+visited(gimli, moria).
+visited(gimli, lothlorien).
+visited(gimli, amon_hen).
+visited(boromir, rivendell).
+visited(boromir, moria).
+visited(boromir, lothlorien).
+visited(boromir, amon_hen).
+carries(frodo, the_one_ring).
+carries(frodo, sting).
+carries(bilbo, sting).
+carries(gandalf, glamdring).
+carries(aragorn, anduril).
+carries(gimli, axe).
+carries(legolas, bow).
+carries(sam, phial_of_galadriel).
+carries(merry, barrow_blade).
+carries(pippin, barrow_blade).
+carries(witch_king, morgul_blade).
+carries(saruman, palantir).
+item(the_one_ring).
+item(sting).
+item(anduril).
+item(glamdring).
+item(phial_of_galadriel).
+is_wizard(gandalf).
+is_wizard(saruman).
+is_wizard(radagast).
+is_king(aragorn).
+is_king(theoden).
+is_king(thranduil).
+is_king(dain).
+visited(merry, shire).
+visited(merry, bree).
+visited(merry, rivendell).
+visited(merry, moria).
+visited(pippin, shire).
+visited(pippin, bree).
+visited(pippin, rivendell).
+visited(pippin, moria).
+visited(boromir, gondor).
+visited(faramir, gondor).
+visited(galadriel, rivendell).
+visited(gollum, moria).
+visited(gollum, mordor).
+visited(gollum, lothlorien).
+visited(saruman, rivendell).
+visited(sauron, rivendell).
+visited(witch_king, bree).
+visited(witch_king, shire).
+visited(haldir, lothlorien).
+visited(elrond, lothlorien).
+visited(arwen, rivendell).
+visited(isildur, mordor).
+visited(elendil, mordor).
+visited(bilbo, rivendell).
+visited(bilbo, shire).
+visited(eomer, rohan).
+visited(eowyn, rohan).
+visited(theoden, isengard).
+visited(grima, rohan).
+visited(grima, isengard).
+visited(lurtz, amon_hen).
+visited(shagrat, mordor).
+visited(gorbag, mordor).
+visited(faramir, ithilien).
+visited(denethor, gondor).
+visited(gandalf, gondor).
+visited(aragorn, gondor).
+visited(legolas, gondor).
+visited(gimli, gondor).
+visited(frodo, ithilien).
+visited(sam, ithilien).
+visited(gollum, ithilien).
+visited(boromir, gondor).
+visited(faramir, ithilien).
 fellowship_member(X) :- visited(X, rivendell), alignment(X, good).
 is_mortal(X) :- race(X, human).
 is_mortal(X) :- race(X, hobbit).
 is_mortal(X) :- race(X, dwarf).
 enemy_of(X, Y) :- alignment(X, good), alignment(Y, evil).
 at_risk(X) :- carries(X, the_one_ring).
-shares_origin(X, Y) :- home_region(X, R), home_region(Y, R).
+shares_origin(X, Y) :- home(X, R), home(Y, R), X \= Y.
 battle_ready(X) :- carries(X, I), item(I).
 travel_companion(X, Y) :- visited(X, L), visited(Y, L), X \= Y.
 has_magic(X) :- race(X, maia).
-
-% Depth 2: Strategic Grouping
 fellowship_bond(X, Y) :- fellowship_member(X), fellowship_member(Y), travel_companion(X, Y).
-ring_bearer_guardian(X) :- fellowship_member(X), travel_companion(X, Y), carries(Y, the_one_ring).
+ring_guardian(X) :- fellowship_member(X), travel_companion(X, Y), carries(Y, the_one_ring).
 threatened_by(X, Y) :- at_risk(X), enemy_of(X, Y).
 magical_item(I) :- carries(X, I), has_magic(X).
 legendary_hero(X) :- fellowship_member(X), battle_ready(X), carries(X, I).
 mortal_companion(X, Y) :- travel_companion(X, Y), is_mortal(X), is_mortal(Y).
-diverse_party(X, Y) :- travel_companion(X, Y), race(X, R1), race(Y, R2), R1 \= R2.
 dangerous_path(L) :- visited(X, L), threatened_by(X, Y), visited(Y, L).
-heir_to_throne(X) :- race(X, human), home_region(X, gondor). % Expand home_region for this
-
-% Depth 3: Higher Level Inference (Meets Requirement)
-target_of_sauron(X) :- ring_bearer_guardian(X), enemy_of(X, sauron).
-vulnerable_fellowship(X, Y) :- diverse_party(X, Y), threatened_by(X, Z).
-protector_of_middle_earth(X) :- fellowship_member(X), has_magic(X), ring_bearer_guardian(X).
+heir_to_throne(X) :- race(X, human), home(X, gondor).
+noble_leader(X) :- is_king(X), alignment(X, good).
+target_of_sauron(X) :- ring_guardian(X), enemy_of(X, sauron).
 high_stakes_mission(X, L) :- carries(X, the_one_ring), dangerous_path(L).
 corrupted_power(X) :- carries(X, the_one_ring), is_mortal(X).
 heroic_sacrifice_potential(X) :- fellowship_bond(X, Y), threatened_by(Y, Z).
 endangered_race(R) :- race(X, R), threatened_by(X, sauron).
 strategic_ally(X, Y) :- shares_origin(X, Y), fellowship_member(X), fellowship_member(Y).
-quest_milestone(L) :- visited(X, L), fellowship_member(X), carries(X, the_one_ring).
 epic_conflict(X, Y, L) :- enemy_of(X, Y), visited(X, L), visited(Y, L).
-final_fate_metric(X) :- target_of_sauron(X), corrupted_power(X).
-
-
