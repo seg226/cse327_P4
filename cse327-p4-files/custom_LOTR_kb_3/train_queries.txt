@@ -1,0 +1,100 @@
+companion(elfstan, I), diverse(rosie, I).
+allied(X, R).
+companion(R1, R1).
+race(I, L), companion(I, idril), race(R, L), diverse(R, sauron).
+diverse(I, radagast), allied(legolas, I).
+carries(I, phial), allied(I, merry).
+diverse(arwen, _EX1).
+character(I).
+companion(R1, Y).
+diverse(I, haldir), home(I, lothlorien), visited(I, lothlorien), companion(I, I).
+companion(I, frodo).
+companion(bombadil, R1).
+companion(Y, _EX1).
+companion(L, R2).
+diverse(merry, I), bond(pippin, I).
+visited(I, shire), companion(I, elanor).
+diverse(_EX0, arwen).
+character(I), companion(I, L), companion(anborn, I), visited(L, ithilien).
+companion(R, I), companion(L, I), diverse(boromir, L), companion(R, shagrat), character(R).
+companion(_EX0, X).
+companion(L, I), companion(I, L), companion(quickbeam, L).
+companion(I, shagrat), companion(I, L), companion(I, isildur), character(I), enemy(L, sauron).
+mortal_bond(aragorn, I), bond(boromir, I).
+companion(Z, R1).
+companion(gollum, _EX0).
+alignment(lurtz, I), alignment(sauron, I).
+mortal_bond(gloin, R2).
+character(I).
+companion(L, balin).
+companion(I, R).
+armed(L).
+enemy(X, saruman).
+companion(I, L), companion(theoden, I), character(L), companion(L, eomer), companion(I, hama).
+companion(Y, I).
+carries(I, ring), companion(legolas, I).
+companion(haldir, X).
+mortal_bond(I, I), mortal_bond(I, I), race(I, human), allied(I, L), mortal_bond(L, I).
+companion(_EX1, Z).
+diverse(_EX1, _EX1).
+companion(derufin, I), companion(I, imrahil), companion(I, I).
+companion(R, X).
+mortal_bond(I, R2).
+companion(I, I), companion(I, L), companion(R, I), companion(R, L), companion(hirluin, R).
+companion(_EX1, R).
+companion(_EX1, L).
+companion(I, I), companion(elanor, I).
+companion(gamgee, I), companion(I, gamgee), companion(L, I), companion(L, goldberry), companion(I, rose).
+companion(Z, witch_king).
+companion(_EX1, L).
+diverse(R2, X).
+diverse(I, arwen).
+bond(_EX0, bilbo).
+companion(R1, L).
+bond(R1, Z).
+diverse(pippin, R2).
+companion(I, I), companion(mablung, I).
+companion(Y, L).
+character(I).
+companion(X, forlong).
+guardian(R1).
+bond(frodo, I).
+companion(Z, L).
+companion(I, R1).
+companion(X, maggot).
+companion(R, I), companion(I, L), companion(merry, I), diverse(L, sam), diverse(R, bilbo).
+companion(L, I), enemy(bilbo, I), enemy(galadriel, I), companion(L, R), companion(frodo, R).
+companion(gimli, R1).
+character(I).
+carries(I, L), companion(I, gloin), bond(legolas, I).
+home(I, iron_hills), visited(I, iron_hills).
+companion(Y, boromir).
+mortal_bond(bilbo, _EX0).
+character(I).
+companion(I, L), companion(earendil, I), diverse(pippin, L).
+visited(I, ithilien), companion(damrod, I).
+companion(_EX0, sam).
+character(I).
+character(I).
+bond(boromir, R2).
+diverse(_EX0, _EX0).
+companion(Y, R).
+companion(elwing, X).
+companion(R, hama).
+visited(L, I), visited(aragorn, I), visited(gandalf, I), companion(L, sam).
+diverse(rosie, R1).
+companion(R, R).
+vulnerable(X, sauron).
+companion(_EX0, frodo).
+companion(X, X).
+character(I).
+companion(L, I), diverse(I, I), character(L), visited(L, mordor).
+companion(witch_king, L).
+companion(L, I), companion(I, gorbag), companion(L, elladan), diverse(L, merry), vulnerable(frodo, L).
+character(I).
+companion(L, eowyn).
+companion(L, _EX0).
+character(I).
+character(I), visited(I, L), companion(I, I).
+companion(theoden, Z).
+companion(R1, elwing).
